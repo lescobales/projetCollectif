@@ -22,7 +22,7 @@ ul {
     background-color: #111;
   }
 
-  .active{
-    float:right;
+  li a:focus{
+    background-color:rgb(60, 126, 40);
   }
   
