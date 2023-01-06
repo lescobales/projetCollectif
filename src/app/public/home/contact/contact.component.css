@@ -1,0 +1,29 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 40%;
+    padding: 1rem;
+}
+
+.nom_prenom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.message input{
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
