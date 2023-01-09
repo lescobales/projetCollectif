@@ -1,28 +1,54 @@
-ul {
+::ng-deep :root {
+  /*Colors*/
+  --dark :#333;
+  --focus :rgb(60, 126, 40);
+
+  /*Marges*/
+  --nav-ul-margin: 100px;
+  --nav-li-padding: 70px;
+}
+
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    
+  }
+
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    box-shadow: 0px 0px 20px 0px black;
+  }
+
+  #left{
+    margin-right: var(--nav-ul-margin);
+  }
+
+  #right{
+    margin-left: var(--nav-ul-margin);
   }
   
-  li {
-    float: left;
-  }
+ li{
+  display: inline-block;
+ }
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+  nav li a {
+    font-size: 1.50em;
     text-decoration: none;
-  }
+    color: white;
+    padding: var(--nav-li-padding);
+}
+
   
   li a:hover {
     background-color: #111;
   }
 
   li a:focus{
-    background-color:rgb(60, 126, 40);
+    background-color: var(--focus);
   }
   

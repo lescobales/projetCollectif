@@ -1,20 +1,26 @@
-<form class="container">   
+<form class="container" [formGroup]="contactForm" (ngSubmit)="submit()">   
 
     <h1 style="text-align: center;">Formulaire de contact</h1>
         <div class="nom_prenom">
             <div id="nom">
                 <div>Nom</div>
-                <input type="text"/>
+                <input type="text"
+                placeholder="Votre nom"
+                formControlName="nom">
             </div>
             <div id="prenom">
                 <div>Prénom</div>
-                <input type="text"/>
+                <input type="text"
+                placeholder="Votre prenom"
+                formControlName="prenom">
             </div>
         </div>
         <div class="mail">
             <div>
                 <div>Email</div>
-                <input type="email"/>
+                <input type="email"
+                placeholder="Votre jean@mail.com"
+                formControlName="mail">
                 
             </div>
         </div>
@@ -22,10 +28,16 @@
             <div>
                 <div>Message</div>
                 <textarea id="story" name="story"
-                rows="5" cols="33">
+                rows="5" cols="33"
+                placeholder="Votre Message"
+                formControlName="message">
                 </textarea>
             </div>
         </div>
-        <input type="submit" style="margin-top: 10px;">     
-
+        <input type="submit" style="margin-top: 10px;"
+        [ngClass]="{'red' : !contactForm.valid ,
+                    'green' : contactForm.valid}"
+                    [disabled]="!contactForm.valid" > 
+        <span *ngIf="isSubmit">Votre message a été envoyé</span>    
+        
 </form>
