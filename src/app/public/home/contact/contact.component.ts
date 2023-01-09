@@ -26,10 +26,14 @@ export class ContactComponent {
     ])
   });
 
-
   submit(){
     this.isSubmit = true;
     setTimeout(() => {this.contactForm.reset(); 
                       this.isSubmit = false;}, 5000);    
   }
+
+  get mail(): any {
+    return this.contactForm.get('mail');
+  }
+
 }

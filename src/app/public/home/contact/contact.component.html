@@ -19,15 +19,17 @@
             <div>
                 <div>Email</div>
                 <input type="email"
-                placeholder="Votre jean@mail.com"
-                formControlName="mail">
+                placeholder="Votre mail: jean@mail.com"
+                formControlName="mail"
+                >
+                <p [hidden]="mail.valid || mail.pristine" style="color: red;">Mail invalid</p>
                 
             </div>
         </div>
         <div class="message">
             <div>
                 <div>Message</div>
-                <textarea id="story" name="story"
+                <textarea
                 rows="5" cols="33"
                 placeholder="Votre Message"
                 formControlName="message">

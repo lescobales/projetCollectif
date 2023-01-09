@@ -8,6 +8,10 @@
     box-shadow: 0px 0px 20px 0px black;
 }
 
+input {
+    margin-bottom: 1rem;
+}
+
 .nom_prenom {
     display: flex;
     justify-content: space-between;
