@@ -6,13 +6,19 @@
                 <div>Nom</div>
                 <input type="text"
                 placeholder="Votre nom"
-                formControlName="nom">
+                formControlName="nom"
+                ngModel pattern="[a-zA-Z ]*">
+                <p [hidden]="nom.valid || nom.pristine" style="color: red;">
+                    Le nom ne doit comporter que des lettres</p>
             </div>
             <div id="prenom">
                 <div>Prénom</div>
                 <input type="text"
                 placeholder="Votre prenom"
-                formControlName="prenom">
+                formControlName="prenom"
+                ngModel pattern="[a-zA-Z ]*">
+                <p [hidden]="prenom.valid || prenom.pristine" style="color: red;">
+                    Le prénom ne doit comporter que des lettres</p>
             </div>
         </div>
         <div class="mail">

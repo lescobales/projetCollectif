@@ -33,7 +33,15 @@ export class ContactComponent {
   }
 
   get mail(): any {
-    return this.contactForm.get('mail');
+    return this.contactForm.get('mail'); 
+  }
+
+  get nom(): any {
+    return this.contactForm.get('nom'); 
+  }
+
+  get prenom(): any {
+    return this.contactForm.get('prenom'); 
   }
 
 }
