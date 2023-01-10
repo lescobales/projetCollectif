@@ -3,4 +3,10 @@ html, body{
     background-color: rgba(32,17,45,255);
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
 }

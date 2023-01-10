@@ -1,0 +1,7 @@
+div img {
+    max-height: 500px;
+	width: auto;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
