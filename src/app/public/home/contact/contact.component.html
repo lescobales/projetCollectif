@@ -28,7 +28,7 @@
                 placeholder="Votre mail: jean@mail.com"
                 formControlName="mail"
                 >
-                <p [hidden]="mail.valid || mail.pristine" style="color: red;">Mail invalid</p>
+                <p [hidden]="mail.valid || !mail.touched" style="color: red;">Mail invalid</p>
                 
             </div>
         </div>
