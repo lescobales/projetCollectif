@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProduitComponent } from './produit/produit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavigationComponent } from '../navigation/navigation.component';
 
 
 
@@ -13,7 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ContactComponent,
     PresentationComponent,
-    ProduitComponent
+    ProduitComponent,
+    NavigationComponent
   ],
   imports: [
     CommonModule,

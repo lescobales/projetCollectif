@@ -8,7 +8,7 @@
                 placeholder="Votre nom"
                 formControlName="nom"
                 ngModel pattern="[a-zA-Z ]*">
-                <p [hidden]="nom.valid || nom.pristine" style="color: red;">
+                <p [hidden]="nom.valid || nom.pristine">
                     Le nom ne doit comporter que des lettres</p>
             </div>
             <div id="prenom">
@@ -17,7 +17,7 @@
                 placeholder="Votre prenom"
                 formControlName="prenom"
                 ngModel pattern="[a-zA-Z ]*">
-                <p [hidden]="prenom.valid || prenom.pristine" style="color: red;">
+                <p [hidden]="prenom.valid || prenom.pristine">
                     Le prénom ne doit comporter que des lettres</p>
             </div>
         </div>
@@ -28,7 +28,7 @@
                 placeholder="Votre mail: jean@mail.com"
                 formControlName="mail"
                 >
-                <p [hidden]="mail.valid || !mail.touched" style="color: red;">Mail invalid</p>
+                <p [hidden]="mail.valid || !mail.touched">Mail invalid</p>
                 
             </div>
         </div>
